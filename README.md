@@ -2,7 +2,7 @@
 
 A highly customized, premium editorial-style personal portfolio website built from scratch. Designed to showcase projects, skills, and academic achievements with a modern, cinematic aesthetic.
 
-![Portfolio Preview](./assets/profile-placeholder.svg) *(Replace with actual screenshot)*
+![Portfolio Preview](./assets/profile.jpg)
 
 ## ✨ Features
 
