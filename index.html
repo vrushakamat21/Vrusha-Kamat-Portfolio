@@ -14,8 +14,8 @@
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <!-- Premium Font Stack: Libre Baskerville (editorial serif) + Inter (ultralight body) + Space Grotesk (mono) -->
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:opsz,wght@14..32,200;14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Editorial Stack: DM Serif Display + Manrope + Space Grotesk -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
@@ -36,10 +36,16 @@
       
       <!-- Brand -->
       <a href="#home" class="nav-brand" aria-label="Vrusha Kamat Portfolio Home">
-        <span class="brand-monogram">VK</span>
+        <svg class="vk-mono" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- V: left diagonal to apex, right diagonal up. K shares right diagonal of V as its vertical bar start -->
+          <path d="M4 6 L18 32 L23 20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="23" y1="6" x2="23" y2="32" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M23 19 L39 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M23 19 L39 32" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         <div class="brand-title">
+        
           <span class="brand-name">Vrusha Kamat</span>
-          <span class="brand-tag">CS Engineering </span>
         </div>
       </a>
 
@@ -110,7 +116,13 @@
     <div>
       <div class="drawer-header">
         <div class="nav-brand">
-          <span class="brand-monogram">VK</span>
+          <svg class="vk-mono" viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- V: left diagonal to apex, right diagonal up. K shares right diagonal of V as its vertical bar start -->
+          <path d="M4 6 L18 32 L23 20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="23" y1="6" x2="23" y2="32" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M23 19 L39 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M23 19 L39 32" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
           <span class="brand-name">Vrusha Kamat</span>
         </div>
         <button class="drawer-close-btn" id="drawer-close" aria-label="Close menu">
@@ -145,9 +157,28 @@
 
         <!-- LEFT: Text Copy -->
         <div class="hero-copy">
+          <!-- Editorial micro-labels -->
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <span class="hero-meta-num">01</span>
+              <span class="hero-meta-divider"></span>
+              <span class="hero-meta-text">Based in India</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-num">02</span>
+              <span class="hero-meta-divider"></span>
+              <span class="hero-meta-text">CS Engineering</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-num">03</span>
+              <span class="hero-meta-divider"></span>
+              <span class="hero-meta-text">Building Digital Experiences</span>
+            </div>
+          </div>
+
           <div class="status-pill">
             <span class="status-dot"></span>
-            <span>Open to Internships &amp; Opportunities · Class of 2026</span>
+            <span>Open to Internships &amp; Opportunities</span>
           </div>
 
           <h1 class="hero-title">
@@ -178,24 +209,7 @@
             </a>
             <a href="#contact" class="btn btn-subtle">Let's Talk</a>
           </div>
-
-          <div class="hero-strip">
-            <div class="strip-item">
-              <span class="strip-value">8.5</span>
-              <span class="strip-label">SGPA</span>
-            </div>
-            <div class="hero-strip-divider"></div>
-            <div class="strip-item">
-              <span class="strip-value">3+</span>
-              <span class="strip-label">Projects</span>
-            </div>
-            <div class="hero-strip-divider"></div>
-            <div class="strip-item">
-              <span class="strip-value">7+</span>
-              <span class="strip-label">Certificates</span>
-            </div>
-          </div>
-        </div>
+        </div> <!-- /hero-copy fixed! -->
 
         <!-- RIGHT: Portrait -->
         <div class="hero-portrait-showcase">
@@ -240,6 +254,7 @@
     <div class="container">
       
       <div class="section-header reveal">
+        <span class="section-num">01</span>
         <span class="section-label">My Story</span>
         <h2 class="section-title">A Little About <em>Me</em></h2>
         <p class="section-subtitle">
@@ -566,9 +581,12 @@
             <img src="assets/project-apiverse.png" alt="Screenshot of the APIverse weather, GitHub profile, and quotes interface" loading="lazy" />
           </a>
           <div class="student-project-heading">
+        <span class="proj-num">01 — Project</span>
+        
             <h3>APIverse</h3>
             <span>API Integration</span>
-          </div>
+          
+        </div>
           <p>An interactive project combining weather data, GitHub profile search, and daily quotes through APIs.</p>
           <div class="student-project-tags">
             <span>JavaScript</span><span>APIs</span><span>HTML</span><span>CSS</span>
@@ -581,9 +599,12 @@
             <img src="assets/project-velora.png" alt="Screenshot of the Velora fragrance landing page welcome screen" loading="lazy" />
           </a>
           <div class="student-project-heading">
+        <span class="proj-num">02 — Project</span>
+        
             <h3>Velora</h3>
             <span>Responsive Landing Page</span>
-          </div>
+          
+        </div>
           <p>A fragrance storefront concept with browsable scent collections, product cards, and a fragrance customization experience.</p>
           <div class="student-project-tags">
             <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span>
@@ -596,9 +617,12 @@
             <img src="assets/project-taskflow.png" alt="Screenshot of the TaskFlow to-do app welcome screen" loading="lazy" />
           </a>
           <div class="student-project-heading">
+        <span class="proj-num">03 — Project</span>
+        
             <h3>TaskFlow</h3>
             <span>To-Do App</span>
-          </div>
+          
+        </div>
           <p>A task organizer for sorting to-dos, highlighting priorities, tracking completed tasks, and keeping quick notes.</p>
           <div class="student-project-tags">
             <span>HTML</span><span>CSS</span><span>JavaScript</span>
@@ -615,6 +639,7 @@
   <section id="certificates">
     <div class="container">
       <div class="section-header reveal">
+        <span class="section-num">04</span>
         <span class="section-label">Certificates</span>
         <h2 class="section-title">Certificates &amp; <em>Learning</em></h2>
         <p class="section-subtitle">MongoDB learning, Buildathon, and Hackathon certificates.</p>
@@ -626,9 +651,10 @@
             <img src="assets/mongodb%20c1.jpeg" alt="MongoDB Basics for Students completion certificate" loading="lazy" />
           </a>
           <div class="mongodb-certificate-info">
-            <h3>MongoDB Basics for Students</h3>
+        <span class="cert-num">Cert 01</span>
+        <h3>MongoDB Basics for Students</h3>
             <p>MongoDB, Inc. · 08-06-2026</p>
-          </div>
+        </div>
         </article>
 
         <article class="mongodb-certificate-card reveal reveal-delay-2">
@@ -636,9 +662,10 @@
             <img src="assets/mongodb%20c2.jpeg" alt="AI Data Strategy with MongoDB completion certificate" loading="lazy" />
           </a>
           <div class="mongodb-certificate-info">
-            <h3>AI Data Strategy with MongoDB</h3>
+        <span class="cert-num">Cert 02</span>
+        <h3>AI Data Strategy with MongoDB</h3>
             <p>MongoDB, Inc. · 08-07-2026</p>
-          </div>
+        </div>
         </article>
 
         <article class="mongodb-certificate-card reveal reveal-delay-3">
@@ -646,9 +673,10 @@
             <img src="assets/mongodb%20c3.jpeg" alt="RAG with MongoDB completion certificate" loading="lazy" />
           </a>
           <div class="mongodb-certificate-info">
-            <h3>RAG with MongoDB</h3>
+        <span class="cert-num">Cert 03</span>
+        <h3>RAG with MongoDB</h3>
             <p>MongoDB, Inc. · 08-07-2026</p>
-          </div>
+        </div>
         </article>
 
         <article class="mongodb-certificate-card reveal reveal-delay-4">
@@ -656,9 +684,10 @@
             <img src="assets/mongodb%20c4.jpeg" alt="Vector Search Fundamentals completion certificate" loading="lazy" />
           </a>
           <div class="mongodb-certificate-info">
-            <h3>Vector Search Fundamentals</h3>
+        <span class="cert-num">Cert 04</span>
+        <h3>Vector Search Fundamentals</h3>
             <p>MongoDB, Inc. · 08-07-2026</p>
-          </div>
+        </div>
         </article>
 
         <article class="mongodb-certificate-card reveal reveal-delay-5">
@@ -666,9 +695,10 @@
             <img src="assets/mongodb%20c5.jpeg" alt="AI Agents with MongoDB completion certificate" loading="lazy" />
           </a>
           <div class="mongodb-certificate-info">
-            <h3>AI Agents with MongoDB</h3>
+        <span class="cert-num">Cert 05</span>
+        <h3>AI Agents with MongoDB</h3>
             <p>MongoDB, Inc. · 08-07-2026</p>
-          </div>
+        </div>
         </article>
 
         <article class="mongodb-certificate-card reveal reveal-delay-1">
@@ -676,9 +706,10 @@
             <img src="assets/buildathon-certificate-preview.png" alt="Buildathon 2025 certificate of participation" loading="lazy" />
           </a>
           <div class="mongodb-certificate-info">
-            <h3>Buildathon 2025</h3>
+        <span class="cert-num">Cert 06</span>
+        <h3>Buildathon 2025</h3>
             <p>Canara Student Open Source Community · 17 September 2025</p>
-          </div>
+        </div>
         </article>
 
         <article class="mongodb-certificate-card reveal reveal-delay-2">
@@ -686,9 +717,10 @@
             <img src="assets/Hackathon%20certificate.jpeg" alt="ElectroHack 4.0 certificate of participation" loading="lazy" />
           </a>
           <div class="mongodb-certificate-info">
-            <h3>ElectroHack 4.0</h3>
+        <span class="cert-num">Cert 07</span>
+        <h3>ElectroHack 4.0</h3>
             <p>KS Institute of Technology · 25–26 September 2026</p>
-          </div>
+        </div>
         </article>
       </div>
     </div>
@@ -797,6 +829,11 @@
           Whether it's an internship opportunity, a collaboration, or just a friendly hello — I'd love to hear from you.
         </p>
       </div>
+
+            <!-- Oversized editorial contact headline -->
+      <h2 class="contact-headline reveal">
+        Let's <em>Build</em><br>Something.
+      </h2>
 
       <div class="contact-separated-layout">
         
@@ -925,6 +962,7 @@
           <p class="footer-desc">
             Computer Science Engineering student crafting thoughtful software and learning something new every day.
           </p>
+          <p class="footer-tagline">Designed &amp; built with intention.</p>
         </div>
 
         <ul class="footer-nav">

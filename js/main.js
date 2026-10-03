@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const getInitialTheme = () => {
     const savedTheme = localStorage.getItem('vk-portfolio-theme');
     if (savedTheme) return savedTheme;
-    return 'light';
+    return 'dark'; // dark-first design
   };
 
   const applyTheme = (theme) => {
@@ -62,10 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
       siteNav.classList.remove('scrolled');
     }
 
-    if (scrollY > 500) {
-      scrollTopBtn.classList.add('visible');
-    } else {
-      scrollTopBtn.classList.remove('visible');
+    if (scrollTopBtn) {
+      if (scrollY > 500) { scrollTopBtn.classList.add('visible'); }
+      else { scrollTopBtn.classList.remove('visible'); }
     }
 
     // ScrollSpy
@@ -166,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, {
-      threshold: 0.12,
+      threshold: 0.04,
       rootMargin: '0px 0px -50px 0px'
     });
 
