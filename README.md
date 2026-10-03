@@ -26,14 +26,6 @@ A highly customized, premium editorial-style personal portfolio website built fr
 **Backend / Local Server:**
 - **Java 25** (Custom lightweight multi-threaded HTTP Server for local hosting)
 
-## 🚀 Getting Started
-
-Since this project has zero npm dependencies, running it is incredibly simple. You can either open the HTML file directly, or use the included Java server.
-
-### Option 1: Using the Java Server (Recommended)
-This project includes a custom Java HTTP server (`PortfolioServer.java`) to serve the files properly (especially useful for preventing CORS issues when loading local assets).
-
-
 FOLDER STRUCTURE:
 ├── assets/             # Images, icons, and PDF resume
 ├── css/
