@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,8 @@
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Premium Font Stack: Libre Baskerville (editorial serif) + Inter (ultralight body) + Space Grotesk (mono) -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:opsz,wght@14..32,200;14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
@@ -139,11 +141,13 @@
        ======================================================================== -->
   <section class="hero-section" id="home">
     <div class="container">
-      <div class="hero-stacked-container">
+      <div class="hero-side-layout">
+
+        <!-- LEFT: Text Copy -->
         <div class="hero-copy">
           <div class="status-pill">
             <span class="status-dot"></span>
-            <span>Open to Internships &amp; Opportunities</span>
+            <span>Open to Internships &amp; Opportunities · Class of 2026</span>
           </div>
 
           <h1 class="hero-title">
@@ -151,73 +155,75 @@
             <span class="name-last">Kamat</span>
           </h1>
 
-          <p class="hero-tagline">
-            Computer Science Engineering Student &nbsp;·&nbsp; Web Developer &nbsp;·&nbsp; Creative Problem Solver
-          </p>
-
-          <p class="hero-description">
-            I'm a B.E. Computer Science &amp; Engineering student at Canara Engineering College in Mangalore. Through my Synent Technologies internship, coursework, and personal projects, I'm growing my skills in web development and AI/ML.
-          </p>
-
-          <div class="hero-facts" aria-label="Quick profile facts">
-            <div class="hero-fact">
-              <strong>8.5</strong>
-              <span>Current SGPA</span>
-            </div>
-            <div class="hero-fact">
-              <strong>3</strong>
-              <span>Synent Projects</span>
-            </div>
-            <div class="hero-fact">
-              <strong>5</strong>
-              <span>MongoDB Certificates</span>
-            </div>
+          <div class="hero-rule">
+            <span class="hero-rule-text">CSE Student · Web Developer · Problem Solver</span>
           </div>
 
+          <p class="hero-description">
+            Hi, I'm Vrusha — a Computer Science &amp; Engineering student passionate about building meaningful digital solutions. I enjoy turning ideas into practical projects and exploring software and AI. Always curious, always building.
+          </p>
+
           <div class="hero-cta-group">
-            <a href="#projects" class="btn btn-primary">
-              View My Projects
+            <a href="#skills" class="btn btn-primary">
+              Explore My Work
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>
             </a>
+            <a href="assets/resume.pdf" download="Vrusha_Kamat_Resume.pdf" class="btn btn-outline">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              </svg>
+              Resume
+            </a>
+            <a href="#contact" class="btn btn-subtle">Let's Talk</a>
+          </div>
 
-            <div class="resume-btn-group">
-              <a href="assets/resume.pdf" download="Vrusha_Kamat_Resume.pdf" class="btn btn-outline">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                </svg>
-                Download Resume
-              </a>
+          <div class="hero-strip">
+            <div class="strip-item">
+              <span class="strip-value">8.5</span>
+              <span class="strip-label">SGPA</span>
             </div>
-
-            <a href="#contact" class="btn btn-subtle">Let's Connect</a>
+            <div class="hero-strip-divider"></div>
+            <div class="strip-item">
+              <span class="strip-value">3+</span>
+              <span class="strip-label">Projects</span>
+            </div>
+            <div class="hero-strip-divider"></div>
+            <div class="strip-item">
+              <span class="strip-value">7+</span>
+              <span class="strip-label">Certificates</span>
+            </div>
           </div>
         </div>
 
-        <!-- Portrait Showcase -->
+        <!-- RIGHT: Portrait -->
         <div class="hero-portrait-showcase">
-          <div class="editorial-frame-container">
-            
-            <!-- Floating Badge — B.Tech CSE only -->
-            <div class="floating-badge floating-badge-top">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" />
-              </svg>
-              <span>B.Tech CSE '26</span>
-            </div>
+          <div class="portrait-premium-frame">
 
-            <!-- Portrait Card -->
-            <div class="portrait-card">
-              <div class="portrait-image-wrapper">
-                <!--
-                  👉 PHOTO REPLACEMENT:
-                  Save your photo as assets/profile.jpg and update src below.
-                -->
-                <img src="assets/profile.jpg" alt="Vrusha Kamat" class="portrait-img" id="main-portrait-img" />
+              <!-- Gold floating badge -->
+              <div class="floating-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" />
+                </svg>
+                <span>B.Tech CSE '26</span>
               </div>
-            </div>
 
+              <!-- Portrait Card — glassy -->
+              <div class="portrait-card">
+                <div class="portrait-image-wrapper">
+                  <!--
+                    👉 TO ADD YOUR PHOTO:
+                    Save your photo to assets/profile.jpg — it will appear here automatically.
+                    Hover over the image to use the upload button for a quick preview.
+                  -->
+                  <img src="assets/profile.jpg" alt="Vrusha Kamat" class="portrait-img" id="main-portrait-img" /></div>
+              </div>
+            <!-- Gold corner brackets -->
+            <span class="corner tl"></span>
+            <span class="corner tr"></span>
+            <span class="corner bl"></span>
+            <span class="corner br"></span>
           </div>
         </div>
 
@@ -990,18 +996,9 @@
     <svg class="toast-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
     </svg>
-    <span class="toast-message" id="toast-message">Done!</span>
+    <span class="toast-message" id="toast-message"></span>
   </div>
 
-
-  <!-- ========================================================================
-       Scroll To Top
-       ======================================================================== -->
-  <button class="scroll-top-btn" aria-label="Scroll to top" title="Back to top">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-    </svg>
-  </button>
 
 
   <!-- Scripts -->
